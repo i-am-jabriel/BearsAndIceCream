@@ -6,8 +6,14 @@ function iceCreamIsBetterThanBears(flavor) {
 }
 
 
+function bearsAreBetterThanIceCream(func) {
+    func();
+    console.log('no way!');
+}
 
 function assignValueToMe(){
     this.me = Math.random();
     return iceCreamIsBetterThanBears();
 }
+
+bearsAreBetterThanIceCream(iceCreamIsBetterThanBears);
